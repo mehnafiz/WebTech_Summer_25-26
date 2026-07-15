@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="portTitle">My Portfolio</h1>
+        <button id="themeBtn" onclick="toggleTheme()">Dark / Light Mode</button>
+    </header>
+
+    <main class="content">
+        <h2>Contact Me</h2>
+        <form onsubmit="return validateForm()">
+            <label>Name</label><br>
+            <input type="text" id="name"><br>
+            <span id="nameError" class="error"></span><br>
+
+            <label>Email</label><br>
+            <input type="email" id="email"><br>
+            <span id="emailError" class="error"></span><br>
+
+            <label>Message</label><br>
+            <textarea id="message"></textarea><br>
+            <span id="messageError" class="error"></span><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+
+    <script src="js/theme.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>
