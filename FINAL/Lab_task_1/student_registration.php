@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Username ---
+    
     if (empty($_POST["username"])) {
         $errors["username"] = "Username is required.";
     } else {
@@ -45,7 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Email ---
     if (empty($_POST["email"])) {
         $errors["email"] = "Email Address is required.";
     } else {
@@ -58,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Phone Number ---
+    
     if (empty($_POST["phone"])) {
         $errors["phone"] = "Phone Number is required.";
     } else {
@@ -73,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Age ---
+    
     if (empty($_POST["age"])) {
         $errors["age"] = "Age is required.";
     } else {
@@ -86,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Password ---
+    
     $postedPassword = "";
     if (empty($_POST["password"])) {
         $errors["password"] = "Password is required.";
@@ -106,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = "";
     $confirmPassword = "";
 
-    // --- Validate Confirm Password ---
+    
     if (empty($_POST["confirm_password"])) {
         $errors["confirm_password"] = "Confirm Password is required.";
     } else {
@@ -117,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Student ID ---
+   
     if (empty($_POST["student_id"])) {
         $errors["student_id"] = "Student ID is required.";
     } else {
@@ -128,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Personal Website ---
+    
     if (empty($_POST["website"])) {
         $errors["website"] = "Personal Website is required.";
     } else {
@@ -141,7 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // --- Validate Date of Birth ---
+    
     if (empty($_POST["dob"])) {
         $errors["dob"] = "Date of Birth is required.";
     } else {
